@@ -14,8 +14,8 @@
             <div class="my-3 p-3 bg-body rounded shadow-sm">
                     <!-- FORM PENCARIAN -->
                     <div class="pb-3">
-                      <form class="d-flex" action="" method="get">
-                          <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
+                      <form class="d-flex" action="/dashboard" method="get">
+                          <input class="form-control me-1" type="search" name="search" value="{{ Request::get('search') }}" placeholder="Cari Nama Mahasiswa atau Prodi" aria-label="Search">
                           <button class="btn btn-secondary" type="submit">Cari</button>
                       </form>
                     </div>
@@ -49,13 +49,17 @@
                                     <td>{{ $mahasiswa->kelas }}</td>
                                     <td>{{ $mahasiswa->angkatan }}</td>
                                     <td>
-                                        <a href='' class="btn btn-warning btn-sm">Edit</a>
+                                        <form action="{{ url('/update', $mahasiswa) }}"  method="GET">
+                                            @csrf
+                                            @method('UPDATE')
+                                            <input placeholder="UPDATE" type="submit" value="Update" class="btn btn-warning btn-sm">
+                                        </form>
+                                        {{-- <a href='' class="btn btn-warning btn-sm">Edit</a> --}}
                                         <form action="{{ url('/delete', $mahasiswa) }}"  method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <input placeholder="DELET" type="submit" value="Delete" class="btn btn-danger btn-sm">
+                                            <input placeholder="DELETE" type="submit" value="Delete" class="btn btn-danger btn-sm">
                                         </form>
-                                        {{-- <a href='{{ url("/delete", $mahasiswa) }}' class="btn btn-danger btn-sm">Del</a> --}}
                                     </td>
                                 </tr>
                             @endforeach
@@ -65,16 +69,6 @@
               </div>
               <!-- AKHIR DATA -->
         </main>
-
-    {{-- <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
-    </div> --}}
 </x-app-layout>
 
 

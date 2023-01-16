@@ -7,6 +7,8 @@ Dibuat menggunakan Laravel & MySQL
 
 ## Fitur
 ### 1. Menambah Data Mahasiswa
+![fitur1](https://user-images.githubusercontent.com/95998981/212691615-de3be5c0-d5a3-482f-9f0d-3664b8cedd35.png)
+![fitur1 2](https://user-images.githubusercontent.com/95998981/212691771-c0a000fa-0047-4990-9869-631e6b327dde.png)
 Fitur ini digunakan untuk menambahkan data baru Mahasiswa. Fitur ini dapat digunakan dengan menekan tombol "+ Tambah Mahasiswa", kemudian isi seluruh field yang ada sesuai dengan data mahasiswa yang ingin ditambahkan. Pastikan seluruh data sudah terisi dengan benar, kemudian tekan tombol "SIMPAN" untuk menambahkan data baru. Terdapat tombol "back" untuk kembali ke menu utama.
 
 ### 2. Mengedit Data Mahasiswa

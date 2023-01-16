@@ -14,9 +14,15 @@ class MahasiswaController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('dashboard', [
-            'mahasiswas' => Mahasiswa::get(),
-        ]);
+        if ($request->has('search')) {
+            return view('dashboard', [
+                'mahasiswas' => Mahasiswa::where('nama', 'LIKE', '%' .$request->search. '%')->orWhere('prodi', 'LIKE', '%' .$request->search. '%')->get(),
+            ]);
+        } else {
+            return view('dashboard', [
+                'mahasiswas' => Mahasiswa::get(),
+            ]);
+        }
     }
 
     public function index()

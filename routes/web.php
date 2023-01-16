@@ -5,6 +5,8 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\showTambahMahasiswa;
 use App\Http\Controllers\storeNewMahasiswa;
+use App\Http\Controllers\storeUpdateMahasiswa;
+use App\Http\Controllers\updateMahasiswa;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,8 +30,14 @@ Route::get('/', function () {
 
 Route::get('/dashboard', MahasiswaController::class)->middleware(['auth'])->name('dashboard');
 Route::get('/tambah', showTambahMahasiswa::class)->middleware(['auth']);
+
 Route::post('/tambah', storeNewMahasiswa::class)->middleware(['auth']);
+
 Route::delete('/delete/{mahasiswa}', DeleteMahasiswaController::class)->middleware(['auth']);
+
+Route::get('/update/{mahasiswa}', updateMahasiswa::class)->middleware(['auth']);
+Route::post('/update/{mahasiswa}/updateMahasiswa', storeUpdateMahasiswa::class)->middleware(['auth'])->name("mahasiswa.update");
+
 
 
 // Route::resource('mahasiswa', MahasiswaController::class)->middleware(['auth', 'verified']);

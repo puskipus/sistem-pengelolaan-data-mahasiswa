@@ -28,7 +28,8 @@ Fitur ini digunakan untuk mencari data mahasiswa berdasarkan nama atau prodi. Ak
 
 ### 5. Mengurutkan Data Mahasiswa
 ![fitur5](https://user-images.githubusercontent.com/95998981/212692520-1b1f3f7f-1e25-47dd-804b-19b5772d55d5.png)
-Fitur ini digunakan untuk mengurutkan data mahasiswa berdasarkan kolom tertentu. Akses fitur ini dengan menekan header tabel sesuai dengan kolom yang ingin diurutkan. Pengurutan dapat dilakukan secara menaik(ascending) atau menurun(descending).
+![fitur5 2](https://user-images.githubusercontent.com/95998981/212692733-0e18e89e-683b-40cb-a857-2971145fdfe6.png)
+Fitur ini digunakan untuk mengurutkan data mahasiswa berdasarkan kolom tertentu. Akses fitur ini dengan menekan header tabel sesuai dengan kolom yang ingin diurutkan. Pengurutan dapat dilakukan secara menaik(ascending) atau menurun(descending). Contoh di atas diurutkan berdasarkan Semester.
 
 ## Proses Instalasi
 nb: Lakukan perintah di dalam tanda petik dua("") tanpa memasukkan tanda petiknya.

@@ -16,11 +16,11 @@ class MahasiswaController extends Controller
     {
         if ($request->has('search')) {
             return view('dashboard', [
-                'mahasiswas' => Mahasiswa::where('nama', 'LIKE', '%' .$request->search. '%')->orWhere('prodi', 'LIKE', '%' .$request->search. '%')->get(),
+                'mahasiswas' => Mahasiswa::sortable()->where('nama', 'LIKE', '%' .$request->search. '%')->orWhere('prodi', 'LIKE', '%' .$request->search. '%')->paginate(5),
             ]);
         } else {
             return view('dashboard', [
-                'mahasiswas' => Mahasiswa::get(),
+                'mahasiswas' => Mahasiswa::sortable()->paginate(5),
             ]);
         }
     }

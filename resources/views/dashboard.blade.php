@@ -31,10 +31,10 @@
                                 <th class="col-md-1">No</th>
                                 <th class="col-md-3">NIM</th>
                                 <th class="col-md-4">Nama</th>
-                                <th class="col-md-2">Prodi</th>
-                                <th class="col-md-2">Semester</th>
-                                <th class="col-md-2">Kelas</th>
-                                <th class="col-md-2">Angkatan</th>
+                                <th class="col-md-2">@sortablelink('prodi', 'Prodi')</th>
+                                <th class="col-md-2">@sortablelink('semester', 'Semester')</th>
+                                <th class="col-md-2">@sortablelink('kelas', 'Kelas')</th>
+                                <th class="col-md-2">@sortablelink('kelas', 'Angkatan')</th>
                                 <th class="col-md-2">Aksi</th>
                             </tr>
                         </thead>
@@ -64,6 +64,7 @@
                                 </tr>
                             @endforeach
                         </tbody>
+                        {{ $mahasiswas->links() }}
                     </table>
 
               </div>

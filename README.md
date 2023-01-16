@@ -5,6 +5,8 @@
 # Website Sistem Pengelolaan Data Mahasiswa
 Dibuat menggunakan Laravel & MySQL
 
+![image](https://user-images.githubusercontent.com/95998981/212691911-cd2a324b-1256-4b8a-9d44-10f666cb0c58.png)
+
 ## Fitur
 ### 1. Menambah Data Mahasiswa
 ![fitur1](https://user-images.githubusercontent.com/95998981/212691615-de3be5c0-d5a3-482f-9f0d-3664b8cedd35.png)
@@ -12,15 +14,20 @@ Dibuat menggunakan Laravel & MySQL
 Fitur ini digunakan untuk menambahkan data baru Mahasiswa. Fitur ini dapat digunakan dengan menekan tombol "+ Tambah Mahasiswa", kemudian isi seluruh field yang ada sesuai dengan data mahasiswa yang ingin ditambahkan. Pastikan seluruh data sudah terisi dengan benar, kemudian tekan tombol "SIMPAN" untuk menambahkan data baru. Terdapat tombol "back" untuk kembali ke menu utama.
 
 ### 2. Mengedit Data Mahasiswa
+![fitur2](https://user-images.githubusercontent.com/95998981/212692317-151b66ce-e609-4f44-bd33-564c138a6814.png)
+![fitur2 1](https://user-images.githubusercontent.com/95998981/212692346-3d466c0d-b8df-45d2-a28a-66719e497d75.png)
 Fitur ini digunakan untuk memperbarui data Mahasiswa. Fitur ini dapat digunakan dengan menekan tombol "Update" pada data Mahasiswa yang ingin diubah. Isi field yang ingin diubah sesuai dengan kebutuhan. Pastikan seluruh data baru sudah terisi dengan benar, kemudian tekan tombol "SIMPAN" untuk mengubah data Mahasiswa. Terdapat tombol "back" untuk kembali ke menu utama.
 
 ### 3. Menghapus Data Mahasiswa
+![fitur3](https://user-images.githubusercontent.com/95998981/212692407-2ffbf45c-d70d-463f-94be-6bb8ad0b334e.png)
 Fitur ini digunakan untuk menghapus data Mahasiswa. Pilih data Mahasiswa yang ingin dihapus, kemudian tekan tombol "Delete" untuk menghapus. 
 
 ### 4. Cari Data Mahasiswa
+![fitur4](https://user-images.githubusercontent.com/95998981/212692469-3c5a1294-b3c5-4356-9bac-8ec3aa618feb.png)
 Fitur ini digunakan untuk mencari data mahasiswa berdasarkan nama atau prodi. Akses fitur ini dengan menekan dan mengisi field yang ada di atas dengan keterangan "Cari Nama Mahasiswa atau Prodi". Setelah mengisi field sesuai dengan data yang ingin dicari tekan tombol "Cari" untuk mencari data Mahasiswa.
 
-### 4. Mengurutkan Data Mahasiswa
+### 5. Mengurutkan Data Mahasiswa
+![fitur5](https://user-images.githubusercontent.com/95998981/212692520-1b1f3f7f-1e25-47dd-804b-19b5772d55d5.png)
 Fitur ini digunakan untuk mengurutkan data mahasiswa berdasarkan kolom tertentu. Akses fitur ini dengan menekan header tabel sesuai dengan kolom yang ingin diurutkan. Pengurutan dapat dilakukan secara menaik(ascending) atau menurun(descending).
 
 ## Proses Instalasi
